@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 SSDC final project completed by me and my colleague Zuvika. We created a calendar todo app project called Chrono Task. We designed this project together 
 using Figma and split the work; I did the HTML and CSS, and Zuvika worked on the JavaScript.
 
@@ -21,3 +22,6 @@ Transform your productivity with ChronoTask! A visually stunning fusion of calen
 - Modern CSS Grid & Flexbox
 - ES6+ JavaScript Features
 - Responsive Web Design
+=======
+# calender-todo-app
+>>>>>>> c9907cba2bc8d557e3709863179cde162d723757
