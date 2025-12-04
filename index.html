@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="darkstyle.css" id="theme-stylesheet">
+</head>
+
+<body>
+
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn" class="theme-toggle-btn">
+            <i class="fa-solid fa-moon" id="theme-icon"></i>
+            <span id="theme-text">Dark Mode</span>
+        </button>
+    </div>
+
+    <video class="background-vid" autoplay muted loop>
+        <source src="images/background.mp4" type="video/mp4">
+    </video>
+    <div class="container-atas">
+
+        <div class="calendar">
+            <div class="header">
+                <button id="prevBtn">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <div class="monthYear" id="monthYear"></div>
+                <button id="nextBtn">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="days">
+                <div class="day">Sun</div>
+                <div class="day">Mon</div>
+                <div class="day">Tue</div>
+                <div class="day">Wed</div>
+                <div class="day">Thu</div>
+                <div class="day">Fri</div>
+                <div class="day">Sat</div>
+            </div>
+            <div class="dates" id="dates"></div>
+        </div>
+
+        <div class="todos-container">
+            <div class="todos-header">
+                <h4>All Tasks</h4>
+                <button id="toggle-expand-btn" class="toggle-expand-btn">
+                    <span id="expand-text">Show All</span>
+                    <i class="fa-solid fa-chevron-down" id="expand-icon"></i>
+                </button>
+            </div>
+            <div class="todos-plus-list" id="todos-plus-list">
+
+            </div>
+        </div>
+
+    </div>
+
+    <section class="container-bawah">
+
+        <div class="container input-container">
+            <div class="tanggal-input">
+                <input type="date" id="selected-date">
+            </div>
+
+            <div class="input-todos">
+                <form class="input-area" id="task-form">
+                    <input type="text" id="task-input" placeholder="Add a new task....">
+                    <button type="submit" id="add-task-btn"><i class="fa-solid fa-plus"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="todos-plus-container">
+            <div class="todos-plus-header">
+                <div class="todos-header">
+                    <h4>My To-Do List</h4>
+                    <span id="selected-date-display">Today</span>
+                </div>
+            </div>
+            <div class="todos-list" id="todos-list">
+            </div>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+
+</html>
